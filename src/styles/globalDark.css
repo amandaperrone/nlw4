@@ -5,16 +5,16 @@
 }
 
 :root {
-    --white: #fff;
-    --background: #f2f3f5;
+    --white: #404040;
+    --background: #121212;
     --gray-line: #dcdde0;
-    --text: #666666;
+    --text: #B3B3B3;
     --text-highlight: #b3b9ff;
-    --title: #2e384d;
-    --red: #BDBDBD; /* cores alteradas */
-    --green: #00E676; /* cores alteradas */
-    --pink: #FF1A40; /* cores alteradas */
-    --pink-dark: #B31240; /* cores alteradas */
+    --title: #ffffff;
+    --red: #BDBDBD; 
+    --green: #00E676; 
+    --pink: #FF1A40; 
+    --pink-dark: #B31240; 
     --blue-twitter: #2aa9e0;
 }
 

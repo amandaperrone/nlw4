@@ -21,35 +21,36 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
   return (
-    <ChallengesProvider 
-      level={props.level} 
-      currentExperience={props.currentExperience} 
-      challengesCompleted={props.challengesCompleted} 
-    >
-      <div className={styles.container}>
-        <Head>
-          <title>Início | Bora! </title>
-        </Head>
-        
-        <Experiencebar />
+    <div >
+      <ChallengesProvider 
+        level={props.level} 
+        currentExperience={props.currentExperience} 
+        challengesCompleted={props.challengesCompleted} 
+      >
+        <div className={styles.container}>
+          <Head>
+            <title>Início | Bora! </title>
+          </Head>
+          
+          <Experiencebar />
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
-        <DarkMode />
-      </div>
-      
-    </ChallengesProvider>
-    
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile />
+                <CompletedChallenges />
+                <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+          
+        </div>
+        
+      </ChallengesProvider>
+    </div>
   )
 }
 
