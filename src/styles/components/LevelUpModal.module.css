@@ -25,7 +25,7 @@
 .container header {
     font-size: 8.75rem;
     font-weight: 600;
-    color: var(--blue);
+    color: var(--pink);
     background: url('/icons/levelUp.svg') no-repeat center;
     background-size: contain;
 }

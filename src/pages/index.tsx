@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
-
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
 import { Experiencebar } from "../components/ExperienceBar";
@@ -12,6 +11,7 @@ import styles from '../styles/pages/Home.module.css';
 
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { DarkMode } from '../components/DarkMode';
 
 interface HomeProps {
   level: number;
@@ -28,7 +28,7 @@ export default function Home(props: HomeProps) {
     >
       <div className={styles.container}>
         <Head>
-          <title>Início | move.it </title>
+          <title>Início | Bora! </title>
         </Head>
         
         <Experiencebar />
@@ -45,9 +45,11 @@ export default function Home(props: HomeProps) {
             </div>
           </section>
         </CountdownProvider>
-        
+        <DarkMode />
       </div>
+      
     </ChallengesProvider>
+    
   )
 }
 

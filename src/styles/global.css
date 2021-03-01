@@ -11,10 +11,10 @@
     --text: #666666;
     --text-highlight: #b3b9ff;
     --title: #2e384d;
-    --red: #e63f5b;
-    --green: #4cd622;
-    --blue: #5965e0;
-    --blue-dark: #4953b8;
+    --red: #BDBDBD; /* cores alteradas */
+    --green: #00E676; /* cores alteradas */
+    --pink: #FF1A40; /* cores alteradas */
+    --pink-dark: #B31240; /* cores alteradas */
     --blue-twitter: #2aa9e0;
 }
 
